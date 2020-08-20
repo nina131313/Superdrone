@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: 'ProximaNova'; 
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45px;
+  color: #6e6e6e;
+  overflow-x: hidden;
+  min-height: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1395px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.last {
+  margin-right: 0 !important;
+}
+
+.btn {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 17px 50px;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #fff;
+  transform: skew(-10deg);
+  transition: all .3s;
+
+  &__text {
+    display: inline-block;
+    transform: skew(10deg);
+  }
+
+  &--big {
+    padding: 17px 70px;
+  }
+
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  &:active {
+    color: #6e6e6e;
+  }
+}
+
+.title {
+  color: #000;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 65px;
+}
+
+.slick {
+  &__arrow {
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 50vh;
+    z-index: 5;
+    cursor: pointer;
+    padding: 0;
+
+    &--prev {
+      left: 50px;
+    }
+
+    &--next {
+      right: 50px;
+    }
+  }
+}

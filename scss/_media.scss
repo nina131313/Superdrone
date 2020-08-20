@@ -1,0 +1,426 @@
+@media(max-width: 1200px) {
+  .header {
+    &__top {
+      position: relative;
+    }
+
+    &__menu-btn {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__list {
+      opacity: 0;
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      transition: all .3s;
+      position: absolute;
+      bottom: -275px;
+      right: 0;
+
+      &.active {
+        opacity: 1;
+        overflow: unset;
+        width: 100%;
+        min-height: 247px;
+        height: 100%;
+        flex-direction: column;
+        background: #fff;
+        text-align: center;
+        z-index: 5;
+      }
+    }
+
+    &__link {
+      color: #000;
+      margin-right: 0;
+      width: 100%;
+      display: inline-block;
+      padding: 20px 0;
+
+      &:hover {
+        border-color: #000
+      }
+  
+      &:active {
+        color: #6e6e6e;
+        border-bottom: 2px solid #6e6e6e;
+      }
+    }
+
+    &__menu {
+      margin-right: auto;
+      margin-left: 15px;
+      width: 100%;
+    }
+
+    &__row {
+      &--third {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .characteristics {
+    background-position: left -160px top 330px;
+    background-size: 700px;
+  }
+
+  .offers {
+    &__item {
+      padding: 130px 10px 35px;
+    }
+  }
+
+  .footer {
+    &__top {
+      flex-direction: column;
+    }
+
+    &__list {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .header {
+    &__title {
+      font-size: 90px;
+      line-height: 100px;
+    }
+  }
+
+  .about {
+    background-position: top 344px right -176px;
+    background-size: 500px;
+
+    &__text {
+      margin-bottom: 45px;
+    }
+
+    &__inner {
+      padding: 100px 0 50px;
+    }
+  }
+
+  .video {
+    .slick__arrow {
+      display: none;
+    }
+  }
+
+  .services {
+    padding: 50px 0;
+
+    &__text {
+      margin-bottom: 65px;
+    }
+
+    &__box {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 25px;
+      padding: 0 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__img {
+      margin-bottom: 20px;
+    }
+  }
+
+  .preview {
+    padding: 50px 0;
+
+    &__img {
+      width: 80%;
+      height: 80%;
+      margin: 0 auto;
+    }
+
+    .slick__arrow {
+      top: 90px;
+    }
+  }
+
+  .characteristics {
+    background-position: left -120px top 218px;
+    padding: 50px 0;
+    background-size: 500px;
+
+    &__title {
+      font-size: 45px;
+      line-height: 50px;
+    }
+  }
+
+  .offers {
+    padding: 50px 0;
+
+    &__box {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 100%;
+      margin-right: 0;
+      padding: 50px 10px 35px;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__img {
+      margin: 0 auto 30px;
+    }
+
+    &__new {
+      top: 30px;
+      right: 225px;
+    }
+  }
+
+  .footer {
+    padding: 50px 0;
+
+    &__center {
+      flex-direction: column;
+    }
+
+    &__address {
+      text-align: center;
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+
+    &__email {
+      margin-bottom: 15px;
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__link {
+      margin-right: 0;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .header {
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__logo-link {
+      margin-bottom: 15px;
+    }
+
+    &__menu {
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+
+    &__bottom {
+      padding-top: 40px;
+    }
+
+    &__scroll {
+      bottom: 10px;
+    }
+
+    &__title {
+      font-size: 60px;
+      line-height: 80px;
+    }
+  }
+
+  .about {
+    background-position: top 84px right -176px;
+    background-size: 400px;
+  }
+
+  .video {
+    &__link-circle {
+      display: none;
+    }
+  }
+
+  .services {
+    &__text {
+      font-size: 20px;
+      line-height: 35px;
+      margin-bottom: 65px;
+    }
+  }
+
+  .preview {
+    &__title {
+      font-size: 50px;
+      line-height: 55px;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 35px;
+    }
+
+    &__img {
+      width: 55%;
+      height: 55%;
+    }
+
+    .slick {
+      &-dots {
+        @include reset-list;
+        display: flex;
+        justify-content: center;
+
+
+        button {
+          font-size: 0;
+          border: none;
+          background: transparent;
+          border: 3px solid #000;
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+
+      &-active {
+        button {
+          background: #000;
+        }
+      }
+    }
+  }
+
+  .characteristics {
+    background-position: right -120px top 435px;
+
+    &__box {
+      flex-direction: column;
+    }
+
+    &__text {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .header {
+    &__top {
+      padding: 50px 20px 0;
+    }
+
+    &__title {
+      font-size: 45px;
+      line-height: 50px;
+      margin-bottom: 35px;
+    }
+
+    &__text {
+      margin-bottom: 45px;
+    }
+  }
+
+  .title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .video {
+    &__link {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .services {
+    &__descr {
+      font-size: 20px;
+      line-height: 35px;
+    }
+
+    &__name {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+
+  .preview {
+    &__img {
+      width: 30%;
+      height: 30%;
+    }
+  }
+
+  .characteristics {
+    background-position: right 0 top 605px;
+    background-size: 200px;
+
+    &__title {
+      font-size: 35px;
+      line-height: 40px;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 35px;
+    }
+  }
+
+  .offers {
+    &__text {
+      font-size: 20px;
+      line-height: 35px;
+      margin-bottom: 60px;
+    }
+
+    &__new {
+      right: 95px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &__price {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  .footer {
+    &__socials-link {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__bottom {
+      text-align: center;
+    }
+
+    &__link {
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}
