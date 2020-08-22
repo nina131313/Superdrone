@@ -143,6 +143,8 @@
     cursor: pointer;
 
     &.active {
+      padding: 8px 5px;
+      
       .header__row {
         &--second {
           display: none;
