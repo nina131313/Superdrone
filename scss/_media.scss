@@ -356,6 +356,10 @@
       width: 200px;
       height: 200px;
     }
+
+    .slick__arrow {
+      display: none;
+    }
   }
 
   .services {
@@ -374,10 +378,6 @@
     &__img {
       width: 30%;
       height: 30%;
-    }
-
-    .slick__arrow {
-      display: none;
     }
   }
 
