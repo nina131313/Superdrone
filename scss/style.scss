@@ -209,14 +209,10 @@
     position: relative;
   }
 
-  &__slide {
+  &__inner {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-  }
-
-  &__inner {
     display: flex;
     justify-content: center;
     align-items: center;
