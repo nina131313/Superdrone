@@ -10,6 +10,14 @@ $(function() {
     slidesToScroll: 1,
     prevArrow: '<button class="slick__arrow slick__arrow--prev"><img src="images/left.png" alt="left" class="slick__img"></button>',
     nextArrow: '<button class="slick__arrow slick__arrow--next"><img src="images/right.png" alt="right" class="slick__img"></button>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+        }
+      },
+    ]
   });
 
   $('.preview__slider').slick({
