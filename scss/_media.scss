@@ -249,8 +249,11 @@
   }
 
   .video {
-    &__link-circle {
-      display: none;
+    &__link {
+      &:before,
+      &:after {
+        display: none;
+      }
     }
   }
 
