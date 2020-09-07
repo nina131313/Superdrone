@@ -38,8 +38,6 @@ $(function() {
     ]
   });
 
-  // $('.video__link').magnificPopup({type:'image'});
-
   $(".header__scroll").on("click","a", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
