@@ -33,6 +33,7 @@ $(function() {
         settings: {
           arrows: false,
           dots: true,
+          autoplay: true
         }
       },
     ]
