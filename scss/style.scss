@@ -139,7 +139,7 @@
     display: none;
     border: none;
     background: transparent;
-    padding: 0 5px;
+    padding: 8px 5px;
     cursor: pointer;
 
     &.active {
@@ -151,7 +151,7 @@
         }
 
         &--first {
-          transform: rotate(45deg) translate(6px, 5px);
+          transform: rotate(45deg) translate(5px, 2px);
         }
 
         &--third {
@@ -165,7 +165,7 @@
     height: 4px;
     width: 35px;
     background: #fff;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     border-radius: 10px;
     display: inline-block;
     transition: all .3s;
@@ -460,8 +460,8 @@
     color: #fff;
     text-transform: uppercase;
     position: absolute;
-    top: 70px;
-    right: 50px;
+    top: 10%;
+    right: 15%;
     background: #000;
     width: 120px;
     height: 120px;
